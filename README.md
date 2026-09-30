@@ -37,7 +37,15 @@ PEXELS_API_KEY=你的_Pexels_Key
 
 `VOICESTUDIO_VOICE` 留空时会自动读取 `/v1/audio/voices` 并选择第一个声音。第一次建议先运行下面的检查命令，看一下你保存的声音 ID。
 
-## 3. 检查 VoiceStudio
+## 3. 先做系统检查
+
+```powershell
+python tools/check_system.py
+```
+
+它会检查 Python、FFmpeg、FFprobe、VoiceStudio 后端和 Pexels API Key。
+
+如果 VoiceStudio 已启动，再查看可用声音：
 
 ```powershell
 python tools/check_voicestudio.py
