@@ -1,1 +1,8 @@
-[object Object]
+.env
+.venv/
+__pycache__/
+*.pyc
+work/
+output/
+.DS_Store
+Thumbs.db
